@@ -9,7 +9,8 @@ puts "> authentication with username and password"
 @@client = Databasedotcom::Client.new :client_id => "3MVG99qusVZJwhsmKYfJHWTxa2xhAW.C0ON_RldSy3BK77TkjMDZhxe2k4yAW5JcZ5ckltwCx.dHRpytpf3b6", :client_secret => "5921374081795068997", :host => "login.salesforce.com"
 
 # authenticate directly with username and password+security token (not using oauth)
-@@client.authenticate :username => "muser@kio.com", :password => "5Zm%PnzcVqx8MHRzLrJFfTHY8kZ0ouTJQ6aYZ"
+@@client.authenticate :username => "muser@kio.com", :password => "jFN0xtczh5nPRhQF0cWIf77Bgg5HaMMZa"
+
 
 puts "> instance url " + @@client.instance_url
 
