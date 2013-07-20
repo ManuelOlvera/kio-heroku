@@ -11,7 +11,7 @@ puts "> authentication with username and password"
 # authenticate directly with username and password+security token (not using oauth)
 @@client.authenticate :username => "muser@kio.com", :password => "jFN0xtczh5nPRhQF0cWIf77Bgg5HaMMZa"
 
-
+ 
 puts "> instance url " + @@client.instance_url
 
 # get news
