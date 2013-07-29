@@ -31,7 +31,7 @@ class Feedback < ActiveRecord::Base
         # if successfull delete the batch from the db
         if result.body == '"Success"' # NOTE salesforce is returning not Success but "Success"
           # success => remove the submitted records from local db
-          Report.destroy( local_feedback_batch )
+          Feedback.destroy( local_feedback_batch )
           puts '> successfully sent feedbacks to salesforce. deleted records from heroku db'
         else
           puts '>>> salesforce responded without success sending feedbacks to it. records are kept in the db for the next try [result and result.body]'
