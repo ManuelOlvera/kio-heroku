@@ -21,7 +21,7 @@ class Ground < ActiveRecord::Base
 			# http call
 			result   = @@client.http_get( url )
 
-			puts '>>>>>>>>>>>>>>>>>>>>>>>>>>>>> result get grounds from salesforce:' + result.body
+			puts '> result get grounds from salesforce:' + result.body
 
 			# log
 			# puts '> get grounds call result: ' + result.body

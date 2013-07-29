@@ -11,7 +11,7 @@ class Feedback < ActiveRecord::Base
 
     	# prepare structure
     	batch_for_salesforce = {
-    		:feedbackList => local_feedback_batch
+    		:reportList => local_feedback_batch
     	}
 
     	# convert rails style to json
