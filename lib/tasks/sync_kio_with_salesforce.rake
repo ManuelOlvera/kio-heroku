@@ -7,4 +7,6 @@ task :sync_kio_with_salesforce => :environment do
 	Ground.get_grounds_from_salesforce
 	# send reports
 	Report.post_reports_batch_to_salesforce
+	# send feedbacks
+	Feedback.post_feedbacks_batch_to_salesforce
 end
